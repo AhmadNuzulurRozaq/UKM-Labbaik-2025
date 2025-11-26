@@ -23,19 +23,29 @@
             line-height: 1.6;
         }
 
-        h1,h2 {
+        h1,
+        h2 {
             font-weight: bold;
         }
 
         .member-card {
-            background-color: #fff;
+            background: radial-gradient(circle, #91C4C3 0%, #80A1BA 100%);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             border: 2px solid transparent;
             justify-content: center;
         }
 
+
+        .card-text {
+            color: white;
+            font-weight: bold;
+        }
+
         .card-subtitle {
             font-style: italic;
+            color: white;
+            opacity: 80%;
+            font-weight: 300
         }
 
         /* Style untuk kartu yang disorot (biru) */
@@ -48,7 +58,7 @@
             font-weight: bold;
             width: 110px;
             /* Untuk perataan titik dua */
-            color: #6c757d;
+            color: white;
             /* Warna abu-abu Bootstrap */
         }
 
@@ -87,230 +97,54 @@
 
             <div class="col-12 col-md-6">
                 <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
+                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('images\logo/image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="rounded square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
+                        <div class="card-text">
+                            <div>
+                                <h5 class="card-title fw-bold mb-0">Nuril Khoirifah</h5>
+                                <p class="card-subtitle">Koordinator Kemuslimahan</p>
+                            </div>
+                            <br>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Angkatan</span>
+                                <span class="detail-value">: 2023</span>
+                            </div>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Prodi</span>
+                                <span class="detail-value">: Manajemen Agroindustri</span>
+                            </div>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Tanggal Lahir</span>
+                                <span class="detail-value">: -</span>
+                            </div>
                         </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-6">
                 <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
+                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('images\logo/image/nadyasalsabella.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="rounded square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
+                        <div class="card-text">
+                            <div>
+                                <h5 class="card-title fw-bold mb-0">Nadya Salsa Bella</h5>
+                                <p class="card-subtitle">Pengurus Kemuslimahan</p>
+                            </div>
+                            <br>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Angkatan</span>
+                                <span class="detail-value">: 2023</span>
+                            </div>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Prodi</span>
+                                <span class="detail-value">: Gizi Klinik</span>
+                            </div>
+                            <div class="d-flex mb-1">
+                                <span class="detail-label">Tanggal Lahir</span>
+                                <span class="detail-value">: 25 Februari 2005</span>
+                            </div>
                         </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
-                    <div class="card-text">
-                        <div>
-                            <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
-                            <p class="card-subtitle text-muted">Koordinator PSDM</p>
-                        </div>
-                        <br>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span class="detail-value">: 2023</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span class="detail-value">: Manajemen Agroindustri</span>
-                        </div>
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span class="detail-value">: 21 Juli 2006</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
         <h2 class="mb-4">Program Kerja Departemen Kemuslimahan</h2>

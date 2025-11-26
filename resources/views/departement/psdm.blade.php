@@ -262,7 +262,7 @@
             </div>
             <div class="col-12 col-md-6">
                 <div class="card member-card text-start h-100 p-3">
-                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
+                    <div class="d-flex align-items-center mb-3"> <img src="{{ asset('images/image/imagecard.jpg') }}" alt="Foto Bintang Aisyah Prasetyo" class="square-circle me-3" style="width: 130px; height: 200px; object-fit: cover;">
                     <div class="card-text">
                         <div>
                             <h5 class="card-title fw-bold mb-0">Bintang Aisyah Prasetyo</h5>
