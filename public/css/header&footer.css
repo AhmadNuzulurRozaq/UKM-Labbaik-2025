@@ -1,0 +1,230 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 150px;
+}
+
+header{
+    background-color: #80A1BA;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.menu ul li{
+    padding: 0 10px;
+    
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover{
+    color: #91C4C3;
+    border-radius: 3px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img{
+    height: 75px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.title h3{
+    margin-left: 20px;
+    color: white;
+}
+.banner{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dropdown{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown .dropButton{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    background-color: transparent;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+
+.dropdown:hover .dropButton{
+    color: #91C4C3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #80A1BA;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #80A1BA;
+    padding: 50px;
+}
+
+.isiFooter{
+    display: flex;
+    align-items: center;
+}
+
+.logoUKM img{
+    height: 150px;
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.infoFooter{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    line-height: 0.5;
+    color: white;
+}
+
+.infoFooter img {
+    height: 30px;
+    width: auto;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+}
+
+.icon{
+    position: relative;
+    top: 10px;
+}
+
+.icon, .email, .phone, .address{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;;
+}
+
+
+
+.address span{
+    display: flex;
+    line-height: 1.3;
+}
+
+.menuFooter{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 200px;
+    gap: 45px;
+    
+}
+
+.menuFooter, .menuNavbar ul, .menuDepartemen ul, .mediaSosial{
+    list-style: none;
+    color: white;
+    line-height: 1.9;
+}
+
+.menuNavbar ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.menuNavbar ul li a:hover{
+    color: #91C4C3;
+}
+
+.menuDepartemen ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menuDepartemen ul li a:hover{
+    color: #91C4C3;
+}
+
+.copyright {
+    display: flex;
+    justify-content: flex-end; 
+    padding-right : 210px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+
+.mediaSosial img{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    padding-right: 10px;
+}
