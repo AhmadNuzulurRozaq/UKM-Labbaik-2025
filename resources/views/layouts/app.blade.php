@@ -18,11 +18,11 @@
 
         <div class="menuNavigasi">
             <nav class="menu">
-                <ul>
+                <ul style="font-size: larger;">
                     <li><a href="/profil/profil">PROFILE</a></li>
                     <li><a href="/galeri/galeri">GALERI</a></li>
                     <li class="dropdown">
-                        <button class="dropButton">DEPARTEMEN ⇂
+                        <button class="dropButton" style="font-size: large;">DEPARTEMEN ⇂
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
@@ -34,7 +34,7 @@
                         </div>
 
                     </li>
-                    <li><a href="#">KONTAK</a></li>
+                    <li><a href="/kontak/kontak">KONTAK</a></li>
                 </ul>
             </nav>
         </div>

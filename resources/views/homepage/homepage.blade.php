@@ -4,381 +4,377 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;700&family=Macondo+Swash+Caps&family=Poppins:wght@300;400;500;600;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-        /* LANDING */
-        .ukmLanding {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden;
-        }
+/* LANDING */
+.ukmLanding {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
 
-        .bgHero {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 110vw;
-            height: 110vh;
-            object-fit: cover;
-            z-index: -1;
-            filter: brightness(50%) blur(3px);
-            transform: translate(-5vw, -5vh);
-        }
+.bgHero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110vw;
+    height: 110vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%) blur(3px);
+    transform: translate(-5vw, -5vh);
+}
 
-        .ukmLHeading {
-            position: absolute;
-            top: 50%;
-            z-index: 10;
-            color: white;
-            font-size: 65px;
-            font-family: "Macondo Swash Caps", cursive;
-        }
+.ukmLHeading {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    color: white;
+    font-size: 40px;
+    font-family: "Macondo Swash Caps", cursive;
+}
 
-        .ukmLHeading2 {
-            position: absolute;
-            z-index: 10;
-            top: 60%;
-            font-size: 25px;
-            color: white;
-            font-family: "Amiri", serif;
-        }
+.ukmLHeading2 {
+    position: absolute;
+    z-index: 10;
+    top: 60%;
+    font-size: 20px;
+    color: white;
+    font-family: "Amiri", serif;
+}
 
-        .logoHeading {
-            width: 130px;
-            position: absolute;
-            top: 32%;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
-        }
-
-
-        /* INTRO */
-        .ukmIntroSection {
-            display: flex;
-            flex-direction: column;
-            background-color: #80A1BA;
-            padding-top: 35px;
-            padding-bottom: 10px;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .ukmIntroArab {
-            font-size: 32px;
-            font-family: "Amiri", serif;
-            font-weight: 700;
-        }
-
-        .ukmIntroP {
-            font-size: 25px;
-            font-family: "Lato", sans-serif;
-        }
+.logoHeading {
+    width: 130px;
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
 
 
-        /* SEJARAH */
-        .ukmSejarahimg {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            margin-bottom: 0;
-            max-height: 720px;
-        }
+/* INTRO */
+.ukmIntroSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #80A1BA;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-        .bgSejarah {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 130%;
-            object-fit: cover;
-            transform: translateY(0);
-            will-change: transform;
-            max-height: 949px;
-        }
+.ukmIntroArab {
+    font-size: 32px;
+    font-family: "Amiri", serif;
+    font-weight: 700;
+}
 
-        .ukmSejarahKet {
-            background-image: linear-gradient(#B4DEBD 0%, #91C4C3 90%, #80A1BA 100%);
-            padding-top: 20px;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 0;
-        }
-
-        .ukmSejarahKet h2 {
-            text-align: center;
-            font-family: "Amiri", serif;
-            font-weight: 700;
-            font-size: 45px;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 20px;
-        }
-
-        .ukmSejarahKet h2::before {
-            margin-bottom: 20px;
-            content: "";
-            position: absolute;
-            width: calc(100vw - 40px);
-            height: 4px;
-            border-radius: 20px;
-            background: #ffffff;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .ukmSejarahKetdesc {
-            text-align: center;
-            max-width: 900px;
-            font-size: 25px;
-            font-family: "Lato", sans-serif;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-        }
-
-        .ukmSejarahKetdesc a.link {
-            color: black;
-        }
-
-        .ukmSejarahKetdesc a.link:hover {
-            color: #80A1BA;
-            font-weight: 700;
-        }
+.ukmIntroP {
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+}
 
 
-        /* DEPARTEMEN */
-        .ukmDeptimg {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            max-height: 720px;
-        }
+/* SEJARAH */
+.ukmSejarahimg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 0;
+    max-height: 720px;
+}
 
-        .bgDept {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 130%;
-            max-height: 949px;
-            object-fit: cover;
-            transform: translateY(0);
-            will-change: transform;
-        }
+.bgSejarah {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130%;
+    object-fit: cover;
+    transform: translateY(0);
+    will-change: transform;
+    max-height: 949px;
+}
 
-        .ukmDept {
-            background-image: linear-gradient(#80A1BA 0%, #ffffff 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.ukmSejarahKet {
+    background-image: linear-gradient(#B4DEBD 0%, #91C4C3 90%, #80A1BA 100%);
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
 
-        .ukmDeptjdl h2 {
-            text-align: center;
-            font-family: "Amiri", serif;
-            font-weight: 700;
-            font-size: 45px;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 20px;
-        }
+.ukmSejarahKet h2 {
+    text-align: center;
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: 45px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+}
 
-        .ukmDeptjdl h2::before {
-            content: "";
-            position: absolute;
-            width: calc(100vw - 40px);
-            height: 4px;
-            border-radius: 20px;
-            background: #ffffff;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-bottom: 20px;
-        }
+.ukmSejarahKet h2::before {
+    margin-bottom: 20px;
+    content: "";
+    position: absolute;
+    width: calc(100vw - 40px);
+    height: 4px;
+    border-radius: 20px;
+    background: #ffffff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
-        .ukmDeptisi h3 {
-            text-align: center;
-            font-family: "Work Sans", sans-serif;
-            font-weight: 700;
-            font-size: 20px;
-        }
+.ukmSejarahKetdesc {
+    text-align: center;
+    max-width: 900px;
+    font-size: 25px;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
 
-        .ukmDeptisi {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .ukmDeptisi p {
-            text-align: center;
-            font-size: 15px;
-        }
-
-        .DepartemenPSDM,
-        .DepartemenSyiar,
-        .DepartemenKemuslimahan,
-        .DepartemenKominfo {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: black;
-        }
+.ukmSejarahKetdesc a.link {
+    color: black;
+}
+.ukmSejarahKetdesc a.link:hover {
+    color: #80A1BA;
+    font-weight: 700;
+}
 
 
-        /* ARTIKEL (CAROUSEL) */
-        .carousel-item {
-            min-height: 360px;
-            height: 360;
-            max-height: 365px;
-            min-width: 640px;
-            max-width: 640px;
-            border-radius: 20px;
-            border: inset;
-            border-color: black;
-            margin-bottom: 30px;
-        }
+/* DEPARTEMEN */
+.ukmDeptimg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    max-height: 720px;
+}
 
-        .carousel-item img {
-            border-radius: 20px;
-            max-height: 725px;
-        }
+.bgDept {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130%;
+    max-height: 949px;
+    object-fit: cover;
+    transform: translateY(0);
+    will-change: transform;
+}
 
-        .ukmArtikel {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            background-color: rgb(255, 255, 255);
-            padding: 90px;
-            padding: 135px;
-        }
+.ukmDept {
+    background-image: linear-gradient(#80A1BA 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ukmDeptjdl h2 {
+    text-align: center;
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: 45px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.ukmDeptjdl h2::before {
+    content: "";
+    position: absolute;
+    width: calc(100vw - 40px);
+    height: 4px;
+    border-radius: 20px;
+    background: #ffffff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.ukmDeptisi h3 {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.ukmDeptisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ukmDeptisi p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.DepartemenPSDM,
+.DepartemenSyiar,
+.DepartemenKemuslimahan,
+.DepartemenKominfo {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
 
 
-        /* INDICATOR LINES */
-        .carousel-indicators {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-        }
+/* ARTIKEL (CAROUSEL) */
+.carousel-item {
+    min-height: 360px;
+    height: 360;
+    max-height: 365px;
+    min-width: 640px;
+    max-width: 640px;
+    border-radius: 20px;
+    border: inset;
+    border-color: black;
+    margin-bottom: 30px;
+}
 
-        .carousel-indicators li {
-            width: 35px;
-            height: 4px;
-            background-color: rgba(0, 0, 0, 0.622);
-            border-radius: 10px;
-            transition: 0.3s;
-        }
+.carousel-item img {
+    border-radius: 20px;
+    max-height: 725px;
+}
 
-        .carousel-indicators .active {
-            background-color: #000000;
-        }
-
-
-        /* NEW — NUMBER INDICATORS (1, 2, 3) */
-        .carousel-numbers {
-            position: absolute;
-            bottom: -10px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            color: rgba(0, 0, 0, 0.7);
-            font-size: 16px;
-            font-family: "Lato", sans-serif;
-            font-weight: 600;
-        }
-
-        .carousel-numbers span {
-            width: 35px;
-            text-align: center;
-            display: inline-block;
-        }
+.ukmArtikel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 90px;
+    padding: 135px;
+}
 
 
-        .carouselContainer {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* CENTER EVERYTHING */
-            gap: 4px;
-        }
+/* INDICATOR LINES */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
 
-        /* --- pagination dots --- */
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-        }
+.carousel-indicators li {
+    width: 35px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.622);
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-        .dot {
-            width: 40px;
-            height: 6px;
-            border-radius: 3px;
-            background-color: #333232;
-        }
+.carousel-indicators .active {
+    background-color: #000000;
+}
 
-        .dot.active {
-            background-color: rgb(0, 0, 0);
-        }
 
-        /* --- numbers --- */
-        .numbers {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding-bottom: 5px;
-            color: #000000;
-            font-size: 18px;
-        }
+/* NEW — NUMBER INDICATORS (1, 2, 3) */
+.carousel-numbers {
+    position: absolute;
+    bottom: -10px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
 
-        .carousel-item {
-            position: relative;
-            /* REQUIRED */
-        }
+.carousel-numbers span {
+    width: 35px;
+    text-align: center;
+    display: inline-block;
+}
 
-        .carouselOverlay {
-            position: absolute;
-            bottom: 40px;
-            /* move up/down */
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            color: white;
-            width: 100%;
-        }
 
-        .carouselOverlay h2 {
-            font-size: 32px;
-            font-family: "Amiri", serif;
-            font-weight: 700;
-            text-shadow: 0 3px 10px rgba(255, 255, 255, 0.849);
-            color: #B4DEBD;
-            margin: 0;
+.carouselContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTER EVERYTHING */
+    gap: 4px;
+}
 
-        }
+/* --- pagination dots --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
 
-        .carouselOverlay p {
-            font-size: 18px;
-            font-family: "Lato", sans-serif;
-            color: #B4DEBD;
-            margin-top: 4px;
-        }
+.dot {
+    width: 40px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #333232;
+}
+
+.dot.active {
+    background-color: rgb(0, 0, 0);
+}
+
+/* --- numbers --- */
+.numbers {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 5px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.carousel-item {
+    position: relative; /* REQUIRED */
+}
+
+.carouselOverlay {
+    position: absolute;
+    bottom: 40px;          /* move up/down */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.carouselOverlay h2 {
+    font-size: 32px;
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    text-shadow: 0 3px 10px rgba(255, 255, 255, 0.849);
+    color: #B4DEBD;
+    margin: 0;
+
+}
+
+.carouselOverlay p {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    color: #B4DEBD;
+    margin-top: 4px;
+}
     </style>
 </head>
 
