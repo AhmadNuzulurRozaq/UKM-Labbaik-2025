@@ -14,6 +14,7 @@
     width: 90%;
     margin: 20px auto;
     padding: 20px;
+    padding-bottom: 50px;
     background: linear-gradient(90deg, #88b4c6, #a8d6c4);
     border-radius: 8px;
     color: white;
