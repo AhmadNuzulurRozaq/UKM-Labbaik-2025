@@ -21,8 +21,13 @@ Route::get('/departement/psdm', function () {
 Route::get('/departement/kominfo', function () {
     return view('departement.kominfo');
 });
-
 Route::get('/galeri/galeri', function () {
     return view('galeri.galeri');
+});
+Route::get('/profil/profil', function () {
+    return view('profil.profil');
+});
+Route::get('/homepage/homepage', function () {
+    return view('homepage.homepage');
 });
 

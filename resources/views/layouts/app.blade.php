@@ -19,7 +19,7 @@
         <div class="menuNavigasi">
             <nav class="menu">
                 <ul>
-                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="/profil/profil">PROFILE</a></li>
                     <li><a href="/galeri/galeri">GALERI</a></li>
                     <li class="dropdown">
                         <button class="dropButton">DEPARTEMEN ⇂
