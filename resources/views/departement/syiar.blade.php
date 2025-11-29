@@ -65,7 +65,7 @@
 <div class="container container-main py-5 text-center">
 
     <!-- Judul Halaman -->
-    <h1 class="mb-4">Departemen Syiar</h1>
+    <h1 class="mb-4 fw-bold">Departemen Syiar</h1>
 
     <p class="text-intro mb-5 text-muted">
         There are many variations of passages of Lorem Ipsum available, but the majority have
@@ -74,86 +74,204 @@
     </p>
 
     <!-- Bagian Kepengurusan -->
-    <h2 class="mb-4 pt-3">Kepengurusan Departemen Syiar</h2>
+    <h2 class="mb-4 pt-3 fw-bold">Kepengurusan Departemen Syiar</h2>
 
     <div class="row g-4 mb-5">
 
-        <!-- Card 1 -->
-        <div class="col-12 col-md-6">
-            <div class="card member-card text-start h-100 p-3">
-                <div class="d-flex align-items-center mb-3">
-
-                    <img src="{{ asset('images/logo/image/imagecard.jpg') }}"
-                         alt="Foto Nuril Khoirifah"
-                         class="rounded me-3"
-                         style="width: 130px; height: 200px; object-fit: cover;">
-
-                    <div class="card-text">
-                        <h5 class="card-title fw-bold mb-0">Nuril Khoirifah</h5>
-                        <p class="card-subtitle">Koordinator Syiar</p>
-
-                        <br>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span>: 2023</span>
-                        </div>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span>: Manajemen Agroindustri</span>
-                        </div>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span>: -</span>
-                        </div>
-                    </div>
-
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/ahmadadifirmansyah.jpg') }}"
+                     alt="Ahmad Adi Firmansyah"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Ahmad Adi Firmansyah</h5>
+                    <p class="card-subtitle">Koordinator Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2022</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Manajemen Bisnis Unggas</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 21 November 2003</span></div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Card 2 -->
-        <div class="col-12 col-md-6">
-            <div class="card member-card text-start h-100 p-3">
-                <div class="d-flex align-items-center mb-3">
-
-                    <img src="{{ asset('images/logo/image/nadyasalsabella.jpg') }}"
-                         alt="Foto Nadya Salsa Bella"
-                         class="rounded me-3"
-                         style="width: 130px; height: 200px; object-fit: cover;">
-
-                    <div class="card-text">
-                        <h5 class="card-title fw-bold mb-0">Nadya Salsa Bella</h5>
-                        <p class="card-subtitle">Pengurus Syiar</p>
-
-                        <br>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Angkatan</span>
-                            <span>: 2023</span>
-                        </div>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Prodi</span>
-                            <span>: Gizi Klinik</span>
-                        </div>
-
-                        <div class="d-flex mb-1">
-                            <span class="detail-label">Tanggal Lahir</span>
-                            <span>: 25 Februari 2005</span>
-                        </div>
-                    </div>
-
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/fatihaturrizqiyah.jpg') }}"
+                     alt="Fatihatur Rizqiyah"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Fatihatur Rizqiyah</h5>
+                    <p class="card-subtitle">Pengurus Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2023</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Akuntansi Sektor Publik</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 23 Juni 2004</span></div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/ayupuspita.jpg') }}"
+                     alt="Ayu Puspita"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Ayu Puspita</h5>
+                    <p class="card-subtitle">Pengurus Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2023</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Teknik Energi Terbarukan</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 31 Juli 2005</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/akhmadkafirizal.jpg') }}"
+                     alt="Akhmad Kafi Rizal"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Akhmad Kafi Rizal</h5>
+                    <p class="card-subtitle">Pengurus Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Manajemen Informatika</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 25 Desember 2005</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/mohrisal.jpg') }}"
+                     alt="Moh. Risal"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Moh. Risal</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Destinasi Pariwisata</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 13 Juli 2004</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/mircoferdynanyamanasir.jpg') }}"
+                     alt="Mirco Ferdynan Yamanasir"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Mirco Ferdynan Yamanasir</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Teknologi Pakan Ternak</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 11 Desember 2005</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/mohfadilmustofa.jpg') }}"
+                     alt="Moh. Fadil Mustofa"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Moh. Fadil Mustofa</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Teknik Produksi Benih</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 20 September 2006</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/sayyidfirmansyah.jpg') }}"
+                     alt="Sayyid Firmansyah"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Sayyid Firmansyah</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Teknologi Pakan Ternak</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 10 November 2005</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/azizaharfindamayangsari.jpg') }}"
+                     alt="Azizzah Arfindah Mayangsari"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Azizzah Arfindah Mayangsari</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Teknik Produksi Benih</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 10 Mei 2006</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="card member-card text-start h-100 p-3">
+            <div class="d-flex align-items-center mb-3">
+                <img src="{{ asset('/images/anggota/revymariskaputri.png') }}"
+                     alt="Revy Mariska Putri"
+                     class="rounded me-3"
+                     style="width: 130px; height: 200px; object-fit: cover;">
+                <div class="card-text">
+                    <h5 class="card-title fw-bold mb-0">Revy Mariska Putri</h5>
+                    <p class="card-subtitle">Staff Muda Syiar</p>
+                    <br>
+                    <div class="d-flex mb-1"><span class="detail-label">Angkatan</span> <span>: 2024</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Prodi</span> <span>: Manajemen Informatika</span></div>
+                    <div class="d-flex mb-1"><span class="detail-label">Tanggal Lahir</span> <span>: 24 Agustus 2006</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
 
     <!-- Program Kerja -->
-    <h2 class="mb-4">Program Kerja Departemen Syiar</h2>
+    <h2 class="mb-4 fw-bold">Program Kerja Departemen Syiar</h2>
 
     <div class="d-grid gap-3 col-md-6 mx-auto">
             <a href="#" class="btn btn-lg program-button fw-bold">Program Kerja Bakti Sosial</a>

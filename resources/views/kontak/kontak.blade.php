@@ -8,8 +8,6 @@
     margin: 0;
     padding: 0;
 }
-
-/* CONTACT BOX */
 .contact-section {
     width: 90%;
     margin: 20px auto;
@@ -19,13 +17,11 @@
     border-radius: 8px;
     color: white;
 }
-
 .contact-section label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
-
 .input-box {
     width: 100%;
     padding: 10px;
@@ -33,7 +29,6 @@
     border: none;
     margin-top: 5px;
 }
-
 .btn-send {
     background: #d8f5dd;
     border: none;
@@ -43,9 +38,6 @@
     border-radius: 4px;
     cursor: pointer;
 }
-
-
-/* FAQ TITLE */
 .faq-title {
     width: 90%;
     margin: 30px auto;
@@ -55,18 +47,14 @@
     border-radius: 8px;
     color: white;
 }
-
 .faq-title h1 {
     font-size: 32px;
     margin: 0;
 }
-
-/* SEARCH BAR */
 .search-container {
     width: 90%;
     margin: 10px auto;
 }
-
 .search-input {
     width: 200px;
     padding: 10px 15px;
@@ -74,21 +62,16 @@
     border: none;
     background: #e6e6e6;
 }
-
-/* DIVIDER */
 .divider {
     width: 90%;
     margin: 20px auto;
     border: none;
     border-top: 1px solid #cfcfcf;
 }
-
-/* FAQ CARDS */
 .faq-list {
     width: 90%;
     margin: auto;
 }
-
 .faq-card {
     background: linear-gradient(90deg, #9fd4c7, #82a4bd);
     padding: 20px;
@@ -96,11 +79,9 @@
     margin-bottom: 18px;
     color: white;
 }
-
 .faq-card h3 {
     margin: 0 0 10px 0;
 }
-
 </style>
 <body>
     <br>
@@ -111,7 +92,6 @@
     <br>
     <br>
     <br>
-    <!-- CONTACT PERSON -->
     <section class="contact-section">
         <h3>Contact Person</h3>
         
@@ -127,22 +107,17 @@
         <button class="btn-send">KIRIM</button>
     </section>
     
-    
-    <!-- FAQ HEADER -->
     <section class="faq-title">
         <h1>FAQ</h1>
         <p>Frequently Asked Questions</p>
     </section>
     
-    
-    <!-- SEARCH BAR -->
     <div class="search-container">
         <input type="text" class="search-input" placeholder="search...">
     </div>
     
     <hr class="divider">
     
-    <!-- FAQ ITEMS -->
     <section class="faq-list">
         
         <div class="faq-card">
