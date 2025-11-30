@@ -1,9 +1,14 @@
 @extends('layouts.app')
 
 @section('contents')
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Galeri | UKM Labbaik</title>
+</head>
 
 <link rel="stylesheet" href="{{ asset('css/header&footer.css')}}">
-</head>
 <main>
     <div class="judulGaleri">
         <h1> > GALERI</h1>

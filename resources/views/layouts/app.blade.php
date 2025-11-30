@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
     <link rel="stylesheet" href="{{ asset('css/header&footer.css')}}">
 </head>
 
@@ -12,7 +12,7 @@
     <!-- MENU HEADER -->
     <header>
         <div class="logo">
-            <a href="/homepage/homepage">
+            <a href="{{ route('homepage.index') }}">
                 <img src="{{ asset('/images/logo/logopolije.png') }}" alt="LOGO POLIJE">
                 <img src="{{ asset('/images/logo/logoukm.png') }}" alt="LOGO UKM">
             </a>

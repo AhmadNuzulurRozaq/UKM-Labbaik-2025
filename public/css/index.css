@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;700&family=Macondo+Swash+Caps&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box; /* Prevents padding/margin from breaking widths */
+}
+
+:root {
+    --primary-color: #80A1BA;
+    --secondary-color: #B4DEBD;
+    --accent-color: #91C4C3;
+    --text-color: #000000;
+    --bg-gradient: linear-gradient(#B4DEBD 0%, #91C4C3 90%, #80A1BA 100%);
+    --max-width: min(90vw, 1200px); /* Fluid max width for content */
+}
+
+/* LANDING */
+.ukmLanding {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Added for absolute positioning context */
+    overflow: hidden;
+    padding: 2rem 1rem; /* Add padding for smaller screens */
+}
+
+.bgHero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%) blur(3px);
+    loading: lazy; /* Lazy load for performance */
+}
+
+.ukmLHeading {
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding-top: 260px;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-family: "Macondo Swash Caps", cursive;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem; /* Added to push below the absolute logo */
+}
+
+.ukmLHeading2 {
+    position: relative;
+    z-index: 10;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    color: white;
+    font-family: "Amiri", serif;
+    text-align: center;
+}
+
+.logoHeading {
+    width: clamp(80px, 10vw, 130px);
+    position: absolute; 
+    padding-top: 180px;
+    top: 2rem; 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 10;
+   
+}
+
+/* INTRO */
+.ukmIntroSection {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.ukmIntroArab {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.ukmIntroP {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-family: "Lato", sans-serif;
+    max-width: var(--max-width);
+}
+
+/* SEJARAH */
+.ukmSejarahimg {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    max-height: 700px;
+    min-height: 400px;
+}
+.bgSejarah {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    object-position: center;
+    loading: lazy;
+}
+
+.ukmSejarahKet {
+    background: var(--bg-gradient);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.ukmSejarahKetjdl {
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.ukmSejarahKetjdl::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    border-radius: 20px;
+    background: white;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ukmSejarahKetdesc {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-family: "Lato", sans-serif;
+    max-width: var(--max-width);
+}
+
+.ukmSejarahKet button{
+    border-radius: 8px;
+    border: transparent;
+    padding: 5px;
+    width: 170px;
+    height: 55px;
+    font-family: "Lato",sans-serif;
+    font-weight: 700;
+    background-color: #B4DEBD;
+}
+
+.ukmSejarahKet a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.ukmSejarahKet a:hover{
+    color: #80A1BA;
+    text-decoration: none;
+}
+
+/* DEPARTEMEN */
+.ukmDeptimg {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Same as above */
+    overflow: hidden;
+    max-height: 700px;
+    min-height: 400px;
+}
+.bgDept {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%; /* Extra height for parallax buffer */
+    object-fit: cover;
+    object-position: center;
+    loading: lazy;
+    /* Optional CSS parallax alternative (same as above) */
+}
+
+
+.ukmDept {
+    background: linear-gradient(var(--primary-color) 0%, white 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.ukmDeptjdl h2 {
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    position: relative;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.ukmDeptjdl h2::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 4px;
+    border-radius: 20px;
+    background: white;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ukmDeptisi {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    gap: 2rem;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.ukmDeptisi > div {
+    text-align: center;
+}
+
+.ukmDeptisi h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-bottom: 0.5rem;
+}
+
+.ukmDeptisi p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-family: "Lato", sans-serif;
+}
+
+/* ARTIKEL (CAROUSEL) */
+.ukmArtikel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    padding: 2rem 1rem;
+}
+
+#Artikel {
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+.carousel-item {
+    position: relative;
+    height: 600px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carouselOverlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.carouselOverlay h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.carouselOverlay p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-family: "Lato", sans-serif;
+    color: var(--secondary-color);
+    margin-top: 0.5rem;
+}
+
+/* GALERI */
+.ukmGaleri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    background-image: linear-gradient(0deg, #B4DEBD, #ffffff);
+    padding-bottom: 120px;
+}
+
+.albumGaleri {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    padding-bottom: -150px;
+}
+
+.gallery-item {
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item a {
+    display: block;
+    text-decoration: none;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.desc {
+    padding: 0.5rem;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-family: "Lato", sans-serif;
+    color: var(--text-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) { 
+    .ukmDeptisi {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .ukmLanding {
+        min-height: 80vh;
+    }
+    .ukmSejarahimg, .ukmDeptimg {
+        height: 60vh;
+    }
+    .albumGaleri {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) { 
+    .ukmDeptisi {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .ukmLanding {
+        min-height: 100vh;
+    }
+    .ukmSejarahimg, .ukmDeptimg {
+        height: 70vh;
+    }
+    .albumGaleri {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.GaleriLainnya{
+    border: transparent;
+    background-color: #B4DEBD;
+    margin-top: 40px;
+    width: 170px;
+    height: 55px;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.GaleriLainnya a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+}
+
+.GaleriLainnya a:hover{
+    color: #80A1BA;
+
+}
+
+/* Kontak */
+.Kontak{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #B4DEBD;
+    padding-bottom:  100px;
+}
+
+.JudulKontak h2{
+    font-family: "Amiri", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    color: #000000;
+}
+
+.containerquestion{
+    background-color: #ffffff;
+    padding: 70px;
+    border-radius: 30px;
+    width: 700px;
+    z-index: 2 ;
+    position: absolute;
+}
+
+.containerquestion p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 15px;
+}
+
+.containerquestion button{
+    border: transparent;
+    background-color: #B4DEBD;
+    border-radius: 8px;
+    padding: 5px;
+    width: 80px;
+    justify-content: end;
+}
+
+.containerquestion a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.containerquestion a:hover{
+    color: #80A1BA;
+}
+
+.JudulKontak{
+    display: flex;
+    z-index: 1;
+    background-color: #91C4C3;
+    padding-left: 325px;
+    padding-right: 325px;
+    padding-bottom: 500px;
+    padding-top: 25px;
+    border-radius: 35px;
+}
