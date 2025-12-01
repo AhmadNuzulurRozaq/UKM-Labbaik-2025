@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{ asset('css/galeri.css')}}">
 
 <main>
-    <div class="judulGaleri" style= "margin-bottom:20px;">
+    <div class="judulGaleri" style="margin-left: 50px; margin-bottom: 20px;">
         <h1> > GALERI</h1>
         <span>KUMPULAN DOKUMENTASI KEGIATAN UKM LABBAIK</span>
     </div>

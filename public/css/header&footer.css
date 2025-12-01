@@ -125,11 +125,18 @@ footer{
     right: 0;
     background-color: #80A1BA;
     padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .isiFooter{
     display: flex;
-    align-items: center;
+    text-align: center;
+}
+
+.footerku {
+    display: flex;
+    text-align: center;
 }
 
 .logoUKM img{
@@ -231,3 +238,51 @@ hr{
     padding-right: 10px;
 }
 
+.judulGaleri h1{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: #80A1BA;
+}
+
+.judulGaleri span{
+    display: flex;
+}
+
+.albumGaleri{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.albumGaleri, .gallery-item{
+    margin: 5px;
+    width: 500px;
+}
+
+.gallery-item:hover{
+    border: 1px solid #ddd;
+}
+
+.albumGaleri, .gallery-item img{
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item, .desc{
+    padding: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .gallery-item{
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery-item {
+    width: calc(100% - 20px);
+  }
+}
