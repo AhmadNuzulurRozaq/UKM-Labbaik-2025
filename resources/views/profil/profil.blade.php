@@ -12,7 +12,6 @@
     <style>
         .profile-card-bg {
             background-color: #e0f2f1;
-            /* Light teal/cyan background for example card */
         }
 
         .profile-section-title {
