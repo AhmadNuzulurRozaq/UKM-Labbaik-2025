@@ -1,0 +1,152 @@
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.judulGaleri h1 {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: #80A1BA;
+}
+
+.judulGaleri span {
+    display: flex;
+}
+
+.albumGaleri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.albumGaleri,
+.gallery-item {
+    margin: 5px;
+    width: 500px;
+}
+
+.gallery-item:hover {
+    border: 1px solid #ddd;
+}
+
+.albumGaleri,
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item,
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px);
+    }
+}
+
+.albumGaleri {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.imageThumbnail {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.imageThumbnail:hover {
+    opacity: 0.7;
+    transform: scale(1.02);
+}
+
+.desc {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 5px;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.close {
+    position: absolute;
+    top: 150px;
+    right: 450px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
