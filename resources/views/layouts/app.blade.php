@@ -44,7 +44,7 @@
     <main>
         @yield('contents')
     </main>
-    <footer>
+    <footer style="font-family: 'Poppins', sans-serif;">
 
         <div class="isiFooter">
             <div class="footerku">
@@ -119,7 +119,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

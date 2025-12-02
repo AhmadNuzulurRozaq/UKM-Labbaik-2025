@@ -101,7 +101,7 @@
         <br>
         <br>
         <section class="contact-section">
-            <h3>Contact Person</h3>
+            <h3>Kritik & Saran</h3>
             
             <label>Nama</label>
             <input type="text" class="input-box">
