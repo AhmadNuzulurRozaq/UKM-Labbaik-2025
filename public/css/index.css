@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    box-sizing: border-box; /* Prevents padding/margin from breaking widths */
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,7 +11,7 @@
     --accent-color: #91C4C3;
     --text-color: #000000;
     --bg-gradient: linear-gradient(#B4DEBD 0%, #91C4C3 90%, #80A1BA 100%);
-    --max-width: min(90vw, 1200px); /* Fluid max width for content */
+    --max-width: min(90vw, 1200px);
 }
 
 /* LANDING */
@@ -21,9 +21,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Added for absolute positioning context */
+    position: relative;
     overflow: hidden;
-    padding: 2rem 1rem; /* Add padding for smaller screens */
+    padding: 2rem 1rem;
 }
 
 .bgHero {
@@ -35,7 +35,6 @@
     object-fit: cover;
     z-index: -1;
     filter: brightness(50%) blur(3px);
-    loading: lazy; /* Lazy load for performance */
 }
 
 .ukmLHeading {
@@ -47,7 +46,7 @@
     font-family: "Macondo Swash Caps", cursive;
     text-align: center;
     margin-bottom: 1rem;
-    margin-top: 5rem; /* Added to push below the absolute logo */
+    margin-top: 5rem;
 }
 
 .ukmLHeading2 {
@@ -110,7 +109,6 @@
     left: 0;
     width: 100%;
     object-position: center;
-    loading: lazy;
 }
 
 .ukmSejarahKet {
@@ -177,7 +175,7 @@
 .ukmDeptimg {
     position: relative;
     width: 100%;
-    height: 60vh; /* Same as above */
+    height: 60vh;
     overflow: hidden;
     max-height: 700px;
     min-height: 400px;
@@ -187,11 +185,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 120%; /* Extra height for parallax buffer */
+    height: 120%;
     object-fit: cover;
     object-position: center;
-    loading: lazy;
-    /* Optional CSS parallax alternative (same as above) */
 }
 
 
@@ -227,7 +223,7 @@
 
 .ukmDeptisi {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr;
     gap: 2rem;
     width: 100%;
     max-width: var(--max-width);
@@ -357,7 +353,6 @@
     color: var(--text-color);
 }
 
-/* Media Queries for Responsiveness */
 @media (min-width: 768px) { 
     .ukmDeptisi {
         grid-template-columns: repeat(2, 1fr); 
