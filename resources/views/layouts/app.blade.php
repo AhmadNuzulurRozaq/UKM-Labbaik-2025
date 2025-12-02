@@ -104,10 +104,10 @@
                         <h3>MEDIA SOSIAL</h3>
                         <span>Jangan lupa join juga media sosial kami dibawah ini.</span>
                         <div class="sosmedIicon">
-                            <a href="#"><img src="{{ asset('/images/logo/instagram-white.svg')}}" alt="instagram"></a>
-                            <a href="#"><img src="{{ asset('/images/logo/tiktok-white.png')}}" alt="tiktok"></a>
-                            <a href="#"><img src="{{ asset('/images/logo/youtube-white.svg')}}" alt="youtube"></a>
-                            <a href="#"><img src="{{ asset('/images/logo/facebook-white.svg') }}" alt="facebook"></a>
+                            <a href="https://www.instagram.com/ukmlabbaik?igsh=MXBwMWp0dTJ3djluNA=="><img src="{{ asset('/images/logo/instagram-white.svg')}}" alt="instagram"></a>
+                            <a href="https://www.tiktok.com/@ukmlabbaik_polije?_r=1&_t=ZS-91t9EkCyk0z"><img src="{{ asset('/images/logo/tiktok-white.png')}}" alt="tiktok"></a>
+                            <a href="https://youtube.com/@ukmlabbaikofficial?si=vBZ8ejZkf7UprgYR"><img src="{{ asset('/images/logo/youtube-white.svg')}}" alt="youtube"></a>
+                            <a href="https://www.facebook.com/share/17oyWTgvCp/"><img src="{{ asset('/images/logo/facebook-white.svg') }}" alt="facebook"></a>
                         </div>
                     </div>
                 </div>
