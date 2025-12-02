@@ -43,7 +43,7 @@
                 Seiring kebutuhan yang berkembang, lahirlah wadah resmi bernama UKM Labaik pada 1989. 
                 Sebuah perjalanan singkat namun penuh makna—dan masih banyak cerita menarik di baliknya.
             </p>
-            <button type="button"><a href="{{ route('profil.profil') }}">Selengkapnya</a></button>
+            <a href="{{ route('profil.profil') }}"><button type="button">Selengkapnya</button></a>
         </div>
     </section>
 

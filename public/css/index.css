@@ -164,7 +164,7 @@ body{
     transition: ease-in-out 0.2s;
 }
 
-.ukmSejarahKet a{
+.ukmSejarahKet button {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 20px;
