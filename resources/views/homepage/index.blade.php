@@ -20,7 +20,7 @@
         <img class="logoHeading" src="{{ asset('/images/logo/Logo.png') }}" alt="UKM Labbaik Logo">
         <h1 class="ukmLHeading">LABBAIK</h1>
         <h2 class="ukmLHeading2">UKM LEMBAGA AKTIVIS ISLAM KAMPUS (LABBAIK)</h2>
-        <img class="bgHero img-fluid" src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/skl_18.jpg" alt="Hero background image of UKM Labbaik activities">
+        <img class="bgHero img-fluid" src="{{ asset('/images/beranda/Landing1.jpg') }}" alt="Hero background image of UKM Labbaik activities">
     </section>
 
     <section class="ukmIntroSection">
@@ -54,21 +54,25 @@
     <section class="ukmDept">
         <div class="ukmDeptjdl"><h2>Departemen</h2></div>
         <div class="ukmDeptisi">
-            <div class="DepartemenPSDM">
-                <h3 class="jdlpsdm">Departemen PSDM</h3>
+            <div class="Departemen-1">
+                <a href="/departement/psdm"><h3 class="jdldept">Departemen PSDM</h3>
                 <p class="isipsdm">Departemen Pengembangan Sumber Daya Manusia bertanggung jawab atas pelatihan dan pengembangan anggota.</p>
+                </a>
             </div>
-            <div class="DepartemenSyiar">
-                <h3 class="jdlsyiar">Departemen Syiar</h3>
+            <div class="Departemen-2">
+                <a href="/departement/syiar"><h3 class="jdldept">Departemen Syiar</h3>
                 <p class="isisyiar">Departemen Syiar fokus pada penyebaran dakwah dan kegiatan islami di kampus.</p>
+                </a>
             </div>
-            <div class="DepartemenKemuslimahan">
-                <h3 class="jdlKemuslimahan">Departemen Kemuslimahan</h3>
+            <div class="Departemen-3">
+                <a href="/departement/kemuslimahan"><h3 class="jdldept">Departemen Kemuslimahan</h3>
                 <p class="isiKemuslimahan">Departemen Kemuslimahan menangani urusan keislaman dan kesejahteraan mahasiswa muslim.</p>
+                </a>
             </div>
-            <div class="DepartemenKominfo">
-                <h3 class="jdlKominfo">Departemen Kominfo</h3>
+            <div class="Departemen-4">
+                <a href="/departement/kominfo"><h3 class="jdldept">Departemen Kominfo</h3>
                 <p class="isiKominfo">Departemen Komunikasi dan Informasi mengelola media sosial, website, dan informasi organisasi.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -114,60 +118,67 @@
         </div>
     </section>
 
-    <!-- New Gallery Section (6x2 grid, 12 items) -->
     <section class="ukmGaleri">
         <h2 class="ukmGaleriTitle">Galeri Kegiatan</h2>
         <div class="albumGaleri">
+            
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="{{ route('galeri.galeri') }}">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/skl_18.jpg" alt="Kegiatan 1">
                     <div class="desc">SKL 18</div>
-                </a>
-            </div>
+                </div>
+            </a>
+
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="/galeri">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/pelantikan_18.jpg" alt="Kegiatan 2">
                     <div class="desc">Pelantikan 18</div>
-                </a>
-            </div>
+                </div>
+            </a>
+
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="/galeri">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/tft_45_madiun.jpg" alt="Kegiatan 3">
                     <div class="desc">TFT 45 Madiun</div>
-                </a>
-            </div>
+                </div>
+            </a>
+            
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="/galeri">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/galang_dana.jpg" alt="Kegiatan 4">
                     <div class="desc">Labbaik Peduli</div>
-                </a>
-            </div>
+                </div>
+            </a>
+            
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="/galeri">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/kepenulisan.jpg" alt="Kegiatan 5">
                     <div class="desc">L2P</div>
-                </a>
-            </div>
+                </div>
+            </a>
+            
+            <a href="/galeri/galeri">
             <div class="gallery-item">
-                <a href="/galeri">
                     <img src="https://ukmlabaikpolije-2428d.firebaseapp.com/img/LABAIK/talkshow_kemuslimahan.jpg" alt="Kegiatan 6">
                     <div class="desc">Talkshow Kemuslimahan</div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
-        <button type="button" class="GaleriLainnya"><a href="{{ route('galeri.galeri') }}">Lainnya</a></button>
+        <a href="/galeri/galeri" class="GaleriLainnya"><button type="button"><p>Lainnya</p></button></a>
     </section>
 
     <section class="Kontak">
         <div class="JudulKontak">
-            <h2>Hubungi kami</h2>
+            <h2>Apakah ada pertanyaan?</h2>
         </div>
         <div class="containerquestion">
-            <p>Apakah anda ingin memberikan saran?</p>
-            <p>Apakah anda ingin mengetahui layanan kami?</p>
-            <p>Apakah anda ingin bertanya?</p><br><br>
-            <p><b>Silahkan klik menu KONTAK untuk info selengkapnya atau klik tombol KONTAK di bawah ini!</b></p>
-            <button type="button"><a href="{{ route('kontak.kontak') }}">Kontak</a></button>
+            <ol>
+                <li>Apakah tentang layanan kami?</li>
+                <li>Apakah tentang pendaftaram ukm?</li>
+                <li>Apakah tentang kegiatan kami?</li>
+            </ol>
+            <p>Silahkan klik menu <b>KONTAK</b> untuk info selengkapnya atau klik tombol KONTAK di bawah ini!</p>
+            <a href="{{ route('kontak.kontak') }}" class="cqbutton"><button type="button"><p>KONTAK</p></button></a>
         </div>
     </section>
 </main>

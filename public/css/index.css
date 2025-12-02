@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;700&family=Macondo+Swash+Caps&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+body{
+    padding: 0px !important;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +14,7 @@
     --secondary-color: #B4DEBD;
     --accent-color: #91C4C3;
     --text-color: #000000;
-    --bg-gradient: linear-gradient(#B4DEBD 0%, #91C4C3 90%, #80A1BA 100%);
+    --bg-gradient: linear-gradient(#B4DEBD 30%, #80A1BA 100%);
     --max-width: min(90vw, 1200px);
 }
 
@@ -34,7 +38,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: brightness(50%) blur(3px);
+    filter: brightness(50%) blur(1px);
 }
 
 .ukmLHeading {
@@ -73,7 +77,7 @@
 .ukmIntroSection {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 2rem 1rem;
     align-items: center;
     justify-content: center;
@@ -108,6 +112,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    height: 120%;
     object-position: center;
 }
 
@@ -156,6 +161,7 @@
     font-family: "Lato",sans-serif;
     font-weight: 700;
     background-color: #B4DEBD;
+    transition: ease-in-out 0.2s;
 }
 
 .ukmSejarahKet a{
@@ -166,9 +172,10 @@
     font-weight: 700;
 }
 
-.ukmSejarahKet a:hover{
-    color: #80A1BA;
-    text-decoration: none;
+.ukmSejarahKet button:hover{
+    background-color: #80A1BA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
 }
 
 /* DEPARTEMEN */
@@ -198,6 +205,7 @@
     align-items: center;
     padding: 2rem 1rem;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .ukmDeptjdl h2 {
@@ -224,7 +232,7 @@
 .ukmDeptisi {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: calc(54px + 2rem);
     width: 100%;
     max-width: var(--max-width);
 }
@@ -233,11 +241,33 @@
     text-align: center;
 }
 
+.Departemen-1,
+.Departemen-2,
+.Departemen-3,
+.Departemen-4{
+    transition: ease-in-out 0.2s;
+}
+
+.Departemen-1:hover,
+.Departemen-2:hover,
+.Departemen-3:hover,
+.Departemen-4:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    padding: 5px;
+    border-radius: 10px;
+}
+
 .ukmDeptisi h3 {
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     margin-bottom: 0.5rem;
+}
+
+.ukmDeptisi a {
+    text-decoration: none;
+    color: rgb(33, 37, 41);
 }
 
 .ukmDeptisi p {
@@ -261,9 +291,18 @@
     max-width: var(--max-width);
 }
 
+.carousel-indicators li{
+    transition: ease-in-out 0.4s;
+}
+
+.carousel-indicators li::marker{
+    color: transparent;
+}
+
 .carousel-item {
     position: relative;
     height: 600px;
+    transition: ease-in-out 0.4s;
 }
 
 .carousel-item img {
@@ -271,6 +310,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    transition: ease-in-out 0.4s;
 }
 
 .carouselOverlay {
@@ -301,6 +341,22 @@
     margin-top: 0.5rem;
 }
 
+.carousel-control-prev{
+    transition: ease-in-out 0.5s;
+}
+.carousel-control-prev:hover{
+    transform: translateX(-5px);
+}
+
+.carousel-control-next{
+    transition: ease-in-out 0.5s;
+
+}
+
+.carousel-control-next:hover{
+    transform: translateX(5px);
+}
+
 /* GALERI */
 .ukmGaleri {
     display: flex;
@@ -310,6 +366,12 @@
     width: 100%;
     background-image: linear-gradient(0deg, #B4DEBD, #ffffff);
     padding-bottom: 120px;
+}
+
+.ukmGaleri h2{
+    font-family: "Amiri", sans-serif;
+    font-weight: 700;
+    padding-bottom: 20px;
 }
 
 .albumGaleri {
@@ -327,6 +389,12 @@
     border-radius: 10px;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 224px;
+    transition: ease-in-out 0.2s;
+}
+
+.gallery-item:hover{
+    transform: translateY(-5px);
 }
 
 .gallery-item a {
@@ -383,87 +451,124 @@
     }
 }
 
-.GaleriLainnya{
+.GaleriLainnya button{
     border: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #B4DEBD;
     margin-top: 40px;
     width: 170px;
     height: 55px;
-    align-items: center;
     border-radius: 8px;
+    transition: ease-in-out 0.2s;
 }
 
-.GaleriLainnya a{
+.GaleriLainnya p{
     color: white;
     text-decoration: none;
     font-size: 20px;
     font-family: "Lato", sans-serif;
     font-weight: 700;
+    align-items: center;
+    position: absolute;
+    margin: 0px;
 }
 
-.GaleriLainnya a:hover{
-    color: #80A1BA;
-
+.GaleriLainnya button:hover{
+    background-color: #80A1BA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
 }
 
 /* Kontak */
-.Kontak{
+.Kontak {
+    position: relative;
+    width: 100%;
+    background-color: #B4DEBD;
+    padding-top: 50px;
+    padding-bottom: 160px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.JudulKontak {
+    background-color: #91C4C3;
+    padding: 40px 0 440px 0;
+    width: 100%;
+    max-height: 500px;
+    max-width: 1150px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.JudulKontak h2 {
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 2.6rem);
+    color: #ffffff;
+    text-align: center;
+}
+
+.containerquestion {
+    background: #ffffff;
+    width: 1021px;
+    height: 322px;
+    max-width: 95%;
+    padding: 60px 70px;
+    border-radius: 30px;
+    position: absolute;
+    top: 170px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.containerquestion p {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    color: #000;
+    margin: 6px 0;
+    text-align: left;
+}
+
+.cqbutton button {
+    margin-top: 20px;
+    border: none;
     justify-content: center;
     align-items: center;
-    background-color: #B4DEBD;
-    padding-bottom:  100px;
-}
-
-.JudulKontak h2{
-    font-family: "Amiri", sans-serif;
-    font-weight: 700;
-    font-size: clamp(2rem, 5vw, 2.8rem);
-    color: #000000;
-}
-
-.containerquestion{
-    background-color: #ffffff;
-    padding: 70px;
-    border-radius: 30px;
-    width: 700px;
-    z-index: 2 ;
-    position: absolute;
-}
-
-.containerquestion p{
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: black;
-    font-size: 15px;
-}
-
-.containerquestion button{
-    border: transparent;
-    background-color: #B4DEBD;
-    border-radius: 8px;
-    padding: 5px;
-    width: 80px;
-    justify-content: end;
-}
-
-.containerquestion a{
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.containerquestion a:hover{
-    color: #80A1BA;
-}
-
-.JudulKontak{
-    display: flex;
-    z-index: 1;
     background-color: #91C4C3;
-    padding-left: 325px;
-    padding-right: 325px;
-    padding-bottom: 500px;
-    padding-top: 25px;
-    border-radius: 35px;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 160px;
+    height: 45px;
+    transition: ease-in-out 0.2s;
+}
+
+.cqbutton p{
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+}
+
+.cqbutton button:hover{
+    background-color: #80A1BA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .containerquestion {
+        padding: 40px 30px;
+        top: 150px;
+    }
+
+    .JudulKontak {
+        padding-bottom: 380px;
+    }
 }

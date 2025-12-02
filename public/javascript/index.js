@@ -1,4 +1,3 @@
-// Throttled scroll handler for better performance
 let ticking = false;
 
 function updateParallax() {
@@ -8,16 +7,16 @@ function updateParallax() {
     ];
 
     sections.forEach(({ section, img }) => {
-        const sectionEl = document.querySelector(section);
-        const imgEl = document.querySelector(img);
+        const sectionEle = document.querySelector(section);
+        const imgEle = document.querySelector(img);
 
-        if (sectionEl && imgEl) {
-            const rect = sectionEl.getBoundingClientRect();
+        if (sectionEle && imgEle) {
+            const rect = sectionEle.getBoundingClientRect();
             const speed = 0.4;
 
             if (rect.top < window.innerHeight && rect.bottom > 0) {
                 const offset = rect.top * speed * -1;
-                imgEl.style.transform = `translateY(${offset}px)`;
+                imgEle.style.transform = `translateY(${offset}px)`;
             }
         }
     });
