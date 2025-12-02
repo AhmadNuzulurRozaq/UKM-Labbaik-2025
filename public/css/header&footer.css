@@ -3,7 +3,7 @@
 }
 
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 150px;
@@ -129,14 +129,14 @@ footer{
     padding-right: 100px;
 }
 
-.isiFooter{
+.isiFooter {
     display: flex;
-    text-align: center;
+    justify-content: center;   /* INI yang memusatkan container isi footer */
 }
 
 .footerku {
     display: flex;
-    text-align: center;
+    justify-content: center;
 }
 
 .logoUKM img{
@@ -237,52 +237,4 @@ hr{
     margin-top: 10px;
     padding-right: 10px;
 }
-
-.judulGaleri h1{
-    display: inline-block;
-    padding: 10px;
-    border-radius: 3px;
-    color: white;
-    background-color: #80A1BA;
-}
-
-.judulGaleri span{
-    display: flex;
-}
-
-.albumGaleri{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.albumGaleri, .gallery-item{
-    margin: 5px;
-    width: 500px;
-}
-
-.gallery-item:hover{
-    border: 1px solid #ddd;
-}
-
-.albumGaleri, .gallery-item img{
-    width: 100%;
-    height: auto;
-}
-
-.gallery-item, .desc{
-    padding: 15px;
-    text-align: center;
-}
-
-@media only screen and (max-width: 768px){
-    .gallery-item{
-        width: calc(50% - 20px);
-    }
-}
-
-@media only screen and (max-width: 480px) {
-  .gallery-item {
-    width: calc(100% - 20px);
-  }
-}
+    

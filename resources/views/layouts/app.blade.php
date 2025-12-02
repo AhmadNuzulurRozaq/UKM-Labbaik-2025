@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/header&footer.css')}}">
 </head>
 
-<body>
+<body style="font-family: 'Poppins', sans-serif;">
     <!-- MENU HEADER -->
     <header>
         <div class="logo">
