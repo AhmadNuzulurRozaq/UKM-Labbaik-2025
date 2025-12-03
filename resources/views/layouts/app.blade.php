@@ -156,7 +156,7 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             top: 100%;
-
+            transform: translatex(-1rem);
         }
 
         .dropdown-content a {
