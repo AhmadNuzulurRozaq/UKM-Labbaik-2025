@@ -69,9 +69,7 @@
     <h1 class="mb-4 fw-bold">Departemen Kewirausahaan</h1>
 
     <p class="text-intro mb-5 text-muted">
-        There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look
-        even slightly believable.
+        Departemen Kewirausahaan merupakan divisi yang berperan dalam mengelola kegiatan usaha serta mendukung kemandirian finansial UKM Labbaik. Departemen ini hadir untuk mengembangkan kreativitas, inovasi, dan jiwa entrepreneur di lingkungan organisasi dengan tetap berlandaskan nilai-nilai islami.
     </p>
 
     <!-- Bagian Kepengurusan -->

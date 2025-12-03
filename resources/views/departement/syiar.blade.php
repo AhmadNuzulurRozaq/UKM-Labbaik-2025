@@ -68,9 +68,7 @@
     <h1 class="mb-4 fw-bold">Departemen Syiar</h1>
 
     <p class="text-intro mb-5 text-muted">
-        There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look
-        even slightly believable.
+        Departemen Syiar merupakan divisi yang bertugas menyebarkan nilai-nilai dan semangat dakwah Islam di lingkungan kampus Politeknik Negeri Jember melalui berbagai kegiatan positif, edukatif, dan inspiratif. Departemen ini menjadi garda terdepan dalam menghidupkan atmosfer keislaman serta memperkuat ukhuwah di antara mahasiswa.
     </p>
 
     <!-- Bagian Kepengurusan -->
@@ -276,7 +274,6 @@
     <div class="d-grid gap-3 col-md-6 mx-auto">
             <a href="#" class="btn btn-lg program-button fw-bold">Program Kerja Bakti Sosial</a>
             <a href="#" class="btn btn-lg program-button fw-bold">Program Kerja Khotmil Quran</a>
-            <a href="#" class="btn btn-lg program-button fw-bold">Program Kerja Bakti Sosial</a>
             <a href="#" class="btn btn-lg program-button fw-bold">Program Kerja Labbaik Competetions</a>
         </div>
 

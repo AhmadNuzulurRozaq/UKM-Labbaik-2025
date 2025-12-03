@@ -173,7 +173,6 @@ footer {
 .isiFooter {
     display: flex;
     justify-content: center;
-    /* INI yang memusatkan container isi footer */
 }
 
 .footerku {

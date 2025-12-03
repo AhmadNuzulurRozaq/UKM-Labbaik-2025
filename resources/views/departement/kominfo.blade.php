@@ -69,9 +69,7 @@
     <h1 class="mb-4 fw-bold">Departemen Kominfo</h1>
 
     <p class="text-intro mb-5 text-muted">
-        There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look
-        even slightly believable.
+        Departemen Komunikasi dan Informasi (Kominfo) merupakan divisi yang bertanggung jawab dalam pengelolaan seluruh media publikasi UKM Labbaik. Departemen ini berperan penting dalam menyebarkan informasi, membangun citra positif organisasi, serta menjadi jembatan komunikasi antara UKM Labbaik dengan mahasiswa maupun masyarakat luas.
     </p>
 
     <!-- Bagian Kepengurusan -->

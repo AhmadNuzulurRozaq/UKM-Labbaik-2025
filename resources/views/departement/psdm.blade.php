@@ -69,9 +69,7 @@
     <h1 class="mb-4 fw-bold">Departemen PSDM</h1>
 
     <p class="text-intro mb-5 text-muted">
-        There are many variations of passages of Lorem Ipsum available, but the majority have
-        suffered alteration in some form, by injected humour, or randomised words which don't look
-        even slightly believable.
+        Departemen PSDM (Pusat Sumber Daya Mahasiswa) UKM Labbaik merupakan divisi yang berfokus pada pengembangan kualitas sumber daya manusia di lingkungan UKM Labbaik. Departemen ini memiliki peran strategis dalam membina, mengarahkan, serta meningkatkan kompetensi para anggota agar mampu berkontribusi secara optimal dalam kegiatan keislaman maupun organisasi.
     </p>
 
     <!-- Bagian Kepengurusan -->
