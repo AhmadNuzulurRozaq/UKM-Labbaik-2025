@@ -140,7 +140,7 @@
             
             <div class="faq-card">
                 <h3>Pertanyaan 3 |</h3>
-                <p>Apakah harus memiliki keahlian dasar TIK untuk mendaftar?</p>
+                <p>Apakah ada kegiatan hadroh di UKM Labbaik?</p>
             </div>
             
         </section>
