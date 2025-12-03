@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lato:wght@300;400;700&family=Macondo+Swash+Caps&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 body{
     padding: 0px !important;
 }
@@ -20,18 +21,45 @@ body{
 
 /* LANDING */
 .ukmLanding {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 2rem 1rem;
+}
+
+.ukmLanding h1{
+    transform: translateY(23rem);
+    color: white;
+}
+
+.judul1{
+    text-align: center !important;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    font-family: "Macondo Swash Caps", serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.desk{
+    font-family: "Amiri", serif;
+    font-weight: 700;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    padding-top: 3rem;
+}
+
+@media(max-width: 768px){
+    .ukmLanding h1{
+        transform: translateY(12rem);
+    }
+    .judul1{
+        font-size: 30px;
+    }
 }
 
 .bgHero {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -41,36 +69,25 @@ body{
     filter: brightness(50%) blur(1px);
 }
 
-.ukmLHeading {
-    position: relative;
-    z-index: 10;
-    color: white;
-    padding-top: 260px;
-    font-size: clamp(2rem, 5vw, 2.5rem);
-    font-family: "Macondo Swash Caps", cursive;
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 5rem;
-}
-
-.ukmLHeading2 {
-    position: relative;
-    z-index: 10;
-    font-size: clamp(1rem, 3vw, 1.25rem);
-    color: white;
-    font-family: "Amiri", serif;
-    text-align: center;
-}
-
 .logoHeading {
-    width: clamp(80px, 10vw, 130px);
-    position: absolute; 
-    padding-top: 180px;
-    top: 2rem; 
-    left: 50%;
-    transform: translateX(-50%); 
+    position: absolute;
     z-index: 10;
-   
+    max-width: 100px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(calc(50vw - 50px));
+    bottom: 55%;
+}
+
+@media (max-width: 768px) {
+    .logoHeading{
+        max-width: 75px;  
+        top: 1rem; 
+        padding-top: 0;
+        left: calc(50% - 25px);
+        top: -19.5%;
+    }
 }
 
 /* INTRO */
@@ -284,6 +301,7 @@ body{
     width: 100%;
     background-color: white;
     padding: 2rem 1rem;
+    transition: ease-in-out 0.4s;
 }
 
 #Artikel {
@@ -301,7 +319,9 @@ body{
 
 .carousel-item {
     position: relative;
-    height: 600px;
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
     transition: ease-in-out 0.4s;
 }
 
@@ -376,7 +396,7 @@ body{
 
 .albumGaleri {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     width: 100%;
     max-width: var(--max-width);
@@ -419,6 +439,14 @@ body{
     font-size: clamp(0.8rem, 2vw, 0.9rem);
     font-family: "Lato", sans-serif;
     color: var(--text-color);
+    text-decoration: none;
+}
+
+.Departemen-1 a, 
+.Departemen-2 a, 
+.Departemen-3 a, 
+.Departemen-4 a {
+    text-decoration: none;
 }
 
 @media (min-width: 768px) { 
@@ -434,14 +462,12 @@ body{
     .albumGaleri {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 @media (min-width: 1024px) { 
     .ukmDeptisi {
         grid-template-columns: repeat(4, 1fr);
-    }
-    .ukmLanding {
-        min-height: 100vh;
     }
     .ukmSejarahimg, .ukmDeptimg {
         height: 70vh;
@@ -563,12 +589,58 @@ body{
 }
 
 @media (max-width: 768px) {
+    .ukmLanding{
+        min-height: 0vw;
+    }
+    
+    .logoHeading{
+        scale: 0.8;
+        transform: translateY(20px);
+    }
+
     .containerquestion {
         padding: 40px 30px;
         top: 150px;
+        height: auto;
     }
 
     .JudulKontak {
         padding-bottom: 380px;
+    }
+
+    .ukmLanding {
+        padding: 1rem 0.5rem;
+    }
+
+    .ukmLHeading {
+        padding-top: 200px;
+        margin-top: 3rem;
+    }
+
+    .logoHeading {
+        padding-top: 120px;
+    }
+
+    .ukmSejarahimg, .ukmDeptimg {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .carousel-item {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .albumGaleri {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+    }
+
+    .gallery-item {
+        height: auto;
+    }
+
+    .gallery-item img {
+        max-height: 150px;
     }
 }

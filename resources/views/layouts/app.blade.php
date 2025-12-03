@@ -208,7 +208,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 20px;
-            line-height: 0.5;
+            line-height: 1;
             color: white;
             /* margin-right: 100px; */
         }

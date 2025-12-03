@@ -14,12 +14,10 @@
 
 @section('contents')
 
-
 <main>
     <section class="ukmLanding">
-        <img class="logoHeading" src="{{ asset('/images/logo/Logo.png') }}" alt="UKM Labbaik Logo">
-        <h1 class="ukmLHeading">LABBAIK</h1>
-        <h2 class="ukmLHeading2">UKM LEMBAGA AKTIVIS ISLAM KAMPUS (LABBAIK)</h2>
+        <img class="logoHeading" src="{{ asset('/images/Beranda/Logo.png') }}" alt="UKM Labbaik Logo">
+        <h1 class="judul1">LABBAIK<br><h1 class="desk">UKM LEMBAGA AKTIVIS ISLAM KAMPUS (LABBAIK)</h1></h1>
         <img class="bgHero img-fluid" src="{{ asset('/images/beranda/Landing1.jpg') }}" alt="Hero background image of UKM Labbaik activities">
     </section>
 
