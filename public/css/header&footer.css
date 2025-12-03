@@ -18,7 +18,7 @@ body {
     padding-top: 150px;
 }
 
-header {
+/* header {
     background-color: #80A1BA;
     padding: 25px 25px;
     display: flex;
@@ -29,18 +29,44 @@ header {
     top: 0;
     left: 0;
     z-index: 9999;
+} */
+ header {
+    background-color: #80A1BA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 400px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-.menu ul {
+
+/* .menu ul {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
     margin-right: 100px;
+} */
+ .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;              /* jarak antar menu */
+    margin: 0;              /* HAPUS dorongan ke kanan */
+    padding: 0;
 }
 
+
 .menu ul li {
-    padding: 0 2px;
+    max-height: max-content;
+    padding: 0 10px;
 
 }
 
@@ -65,7 +91,7 @@ header {
 }
 
 .logo img {
-    height: 75px;
+    height: 70px;
     width: auto;
     margin-left: 5px;
     margin-right: 5px;
@@ -172,6 +198,7 @@ footer {
     margin-top: 20px;
     line-height: 0.5;
     color: white;
+    /* margin-right: 100px; */
 }
 
 .infoFooter h1 {
@@ -215,7 +242,7 @@ hr {
 .menuFooter {
     display: flex;
     justify-content: flex-end;
-    margin-left: 200px;
+    /* margin-left: 50px; */
     gap: 45px;
 
 }
