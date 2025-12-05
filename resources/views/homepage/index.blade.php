@@ -16,7 +16,7 @@
 
 <main>
     <section class="ukmLanding">
-        <img class="logoHeading" src="{{ asset('/images/Beranda/Logo.png') }}" alt="UKM Labbaik Logo">
+        <img class="logoHeading" src="{{ asset('/images/logo/Logo.png') }}" alt="UKM Labbaik Logo">
         <h1 class="judul1">LABBAIK<br><h1 class="desk">UKM LEMBAGA AKTIVIS ISLAM KAMPUS (LABBAIK)</h1></h1>
         <img class="bgHero img-fluid" src="{{ asset('/images/beranda/MASJID.jpg') }}" alt="Hero background image of UKM Labbaik activities">
     </section>
