@@ -15,7 +15,6 @@ body{
     --secondary-color: #B4DEBD;
     --accent-color: #91C4C3;
     --text-color: #000000;
-    --bg-gradient: linear-gradient(#B4DEBD 30%, #80A1BA 100%);
     --max-width: min(90vw, 1200px);
 }
 
@@ -25,7 +24,7 @@ body{
 }
 
 .ukmLanding h1{
-    transform: translateY(23rem);
+    transform: translateY(370px);
     color: white;
 }
 
@@ -94,7 +93,7 @@ body{
 .ukmIntroSection {
     display: flex;
     flex-direction: column;
-    background-color: var(--secondary-color);
+    background-color: white;
     padding: 2rem 1rem;
     align-items: center;
     justify-content: center;
@@ -107,6 +106,7 @@ body{
     font-family: "Amiri", serif;
     font-weight: 700;
     margin-bottom: 1rem;
+    color: #91C4C3;
 }
 
 .ukmIntroP {
@@ -157,7 +157,7 @@ body{
     width: 80%;
     height: 4px;
     border-radius: 20px;
-    background: white;
+    background: #91C4C3;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -177,12 +177,12 @@ body{
     height: 55px;
     font-family: "Lato",sans-serif;
     font-weight: 700;
-    background-color: #B4DEBD;
+    background-color: #91C4C3;
     transition: ease-in-out 0.2s;
 }
 
 .ukmSejarahKet button {
-    color: rgb(255, 255, 255);
+    color: #FFF7DD;
     text-decoration: none;
     font-size: 20px;
     font-family: "Lato", sans-serif;
@@ -216,7 +216,7 @@ body{
 
 
 .ukmDept {
-    background: linear-gradient(var(--primary-color) 0%, white 100%);
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,7 +240,7 @@ body{
     width: 80%;
     height: 4px;
     border-radius: 20px;
-    background: white;
+    background: #91C4C3;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -482,7 +482,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #B4DEBD;
+    background-color: #91C4C3;
     margin-top: 40px;
     width: 170px;
     height: 55px;
@@ -491,7 +491,7 @@ body{
 }
 
 .GaleriLainnya p{
-    color: white;
+    color: #FFF7DD;
     text-decoration: none;
     font-size: 20px;
     font-family: "Lato", sans-serif;
@@ -567,8 +567,8 @@ body{
     background-color: #91C4C3;
     border-radius: 10px;
     padding: 10px 0;
-    width: 160px;
-    height: 45px;
+    width: 170px;
+    height: 55px;
     transition: ease-in-out 0.2s;
 }
 
@@ -577,7 +577,7 @@ body{
     font-family: "Lato", sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: #FFF7DD;
     margin: 0;
     text-align: center;
 }
