@@ -76,7 +76,7 @@ body{
     justify-content: center;
     align-items: center;
     transform: translateX(calc(50vw - 50px));
-    bottom: 55%;
+    bottom: calc(50% + 50px);
 }
 
 @media (max-width: 768px) {
